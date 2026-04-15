@@ -4,10 +4,83 @@
 body {
   margin: 0; 
 }
+/*header*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+body {
+  margin: 0;
+}
 
-.bg1 {
+.header {
+  width: 100%;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(to right, white 50%, #D5C1B4 50%);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
   
 }
+
+.menu a {
+  
+  position: relative;
+  text-decoration: none;
+   font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-size: 28px;
+  color: #573A27;
+  transition: color 0.3s ease;
+}
+
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #D5C1B4;
+  transition: width 0.3s ease;
+}
+
+
+.menu a:hover {
+  color: #D5C1B4;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a.light {
+  color: white;
+}
+
+
+.menu a.light:hover {
+  color: #573A27;
+}
+
+
+.menu a.light::after {
+  background-color: #573A27;
+}
+
+
+/*body*/
+
 .container1 {
   display:flex;
   height:100vh;
